@@ -1,0 +1,54 @@
+// $size = $this->input->post('sizeNoList[]');
+// foreach ($size as $sa) {
+//     var_dump($sa[1]);
+// }
+
+
+
+
+
+
+
+
+
+
+
+$data = [
+    "GR_NO" => $this->input->post('GR_NO', true),
+    "SIZE_NO" => $this->input->post('sizeNoList[]', true), //dari JS
+    "SIZE_SORT" => $this->input->post('GR_NO', true), //dari JS
+    "RATIO" => $this->input->post('totRatio[]', true), //dari JS INDEX PERTAMA SUDAH DIDAPAT HANYA INDEX 0
+    "TOTAL_RATIO" => $this->input->post('total_ratio', true), //dari JS
+    "BUYER" => $this->input->post('buyer', true),
+    "PRINT_STAT" => $this->input->post('print_stat', true),
+    "PRINT_PART_QTY" => $this->input->post('print_part_qty', true),
+    "EMBRO_STAT" => $this->input->post('embro_stat', true),
+    "EMBRO_PART_QTY" => $this->input->post('embro_part_qty', true),
+    "MARKER_LENGTH" => $this->input->post('mdcutCons3', true), //dari JS
+    "STYLE" => $this->input->post('StyleDesc', true), //dari JS
+    "ORDER_NO" => $this->input->post('on', true), //dari JS (WORK)
+    "COLOR_DESC" => $this->input->post('color', true), //dari JS (WORK)
+    "WO_NO" => $this->input->post('wo_no', true),
+    "PRODUCT_CODE" => $this->input->post('product_code', true),
+    "PORTION" => $this->input->post('portion', true),
+    "FAB_MAT" => $this->input->post('fab_mat', true),
+    "FAB_WIDTH" => $this->input->post('fab_width', true),
+    "FAB_WEIGHT" => $this->input->post('fab_weight', true),
+    "MD_CONS" => $this->input->post('md_cons', true),
+    "CUT_CONS" => $this->input->post('cut_cons', true),
+    "MARKER_NO" => $this->input->post('marker_no', true),
+    "TOD" => $this->input->post('tod'),
+    "SEASON" => $this->input->post('season', true),
+    "TABLE_INDEX" => $this->input->post('table_index', true),
+    "QTY_LBR" => $this->input->post('mdcutCons1', true), //dari JS
+    "TOTAL_QTY" => $this->input->post('mdcutCons2', true), //dari JS
+    "YARD_REQ" => $this->input->post('yard_req', true),
+    "KG_REQ" => $this->input->post('kg_req', true)
+    // "AutoNum" => '';
+];
+
+
+var_dump($data);
+
+
+// $this->db->insert('CuttingPlan', $data);
